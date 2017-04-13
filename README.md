@@ -5,14 +5,14 @@ Software Testing Code Snippets
 
 #### <i class="icon-pencil"></i> Kickoff Jenkins from Octopus Deploy - Powershell
 ----------
-> **Code:**
+```sh
 $user = "Administrator" 
 $pass = "Password" 
 $pair = "${user}:${pass}" 
 $bytes = [System.Text.Encoding]::ASCII.GetBytes($pair) 
 $base64 = [System.Convert]::ToBase64String($bytes) 
 $basicAuthValue = "Basic $base64" $headers = @{ Authorization = $basicAuthValue } Invoke-WebRequest -uri "http://jenkinsserver:port/job/myproject/build?token=runmyprojectrun" -Headers $headers
-
+```
 
 
 #### <i class="icon-pencil"></i> Get Jenkins Job Results - Powershell
