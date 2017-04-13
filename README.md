@@ -2,8 +2,6 @@ Software Testing Code Snippets
 ==========================
 
 
-----------
-
 
 #### <i class="icon-pencil"></i> Kickoff Jenkins from Octopus Deploy - Powershell
 
@@ -15,9 +13,13 @@ $bytes = [System.Text.Encoding]::ASCII.GetBytes($pair)
 $base64 = [System.Convert]::ToBase64String($bytes) 
 $basicAuthValue = "Basic $base64" $headers = @{ Authorization = $basicAuthValue } Invoke-WebRequest -uri "http://jenkinsserver:port/job/myproject/build?token=runmyprojectrun" -Headers $headers
 
+
+
 #### <i class="icon-pencil"></i> Get Jenkins Job Results - Powershell
 > **Code:**
 $failcount = $json.actions.failCount
+
+
 
 #### <i class="icon-pencil"></i> Check if API is up - Powershell
 > **Code:**
@@ -33,6 +35,7 @@ If ($check -eq 'true')
     Write-Host "API is up"
     exit 0
 } 
+
 
 
 #### <i class="icon-pencil"></i> Return XML field as column - SQL Query
