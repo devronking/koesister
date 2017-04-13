@@ -6,7 +6,6 @@ Software Testing Code Snippets
 
 
 #### <i class="icon-pencil"></i> Kickoff Jenkins from Octopus Deploy - Powershell
------------------------------------------------------------
 
 > **Code:**
 $user = "Administrator" 
